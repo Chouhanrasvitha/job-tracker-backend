@@ -1,8 +1,16 @@
+# Spring Boot / Maven
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
 
 ### STS ###
 .apt_generated
@@ -14,12 +22,15 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+### VS Code ###
+.vscode/
+
+### NetBeans / Gradle ###
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +40,25 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Compiled class file
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Archives (optional, but safe)
+*.zip
+*.tar.gz
+*.rar
+
+# Secrets / local overrides (IMPORTANT)
+application-local.properties
+application-secrets.properties
+.env
